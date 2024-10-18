@@ -13,6 +13,10 @@ const httpClient: AxiosInstance = axios.create({
 httpClient.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     config.headers['Content-Type'] = 'application/json'
+    const token = localStorage.getItem('token')
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`
+    }
     return config
   },
   error => {
