@@ -1,4 +1,4 @@
-import httpClient from '@/api/axiosClient'
+import httpClient from '@/api/httpClient'
 import type { LoginBody } from '@/interfaces/LoginBody.interface'
 
 const ENDPOINT = 'auth'
