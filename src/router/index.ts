@@ -1,6 +1,7 @@
 import Landing from '@/pages/Landing.vue'
 import Login from '@/pages/Login.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import '../assets/base.scss'
 
 const router = createRouter({
   history: createWebHistory(),
