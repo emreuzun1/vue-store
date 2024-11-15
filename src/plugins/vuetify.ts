@@ -1,4 +1,6 @@
+import '@fortawesome/fontawesome-free/css/all.css'
 import { createVuetify, type ThemeDefinition } from 'vuetify'
+import { aliases, fa } from 'vuetify/iconsets/fa'
 
 const customTheme: ThemeDefinition = {
   dark: false,
@@ -21,6 +23,13 @@ export default createVuetify({
     defaultTheme: 'customTheme',
     themes: {
       customTheme,
+    },
+  },
+  icons: {
+    defaultSet: 'fa',
+    aliases,
+    sets: {
+      fa,
     },
   },
 })
